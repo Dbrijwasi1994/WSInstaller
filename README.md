@@ -14,9 +14,9 @@ INSTALL
 2. Enter the Service Name you want to give.
 3. Enter the Display Name you want to give.
 4. Select the exe file you want to install as a service.
+5. Click on Install to install the service.
 
 DELETE
-5. Click on Install to install the service.
 1. Click on Delete Service in Select Operation.
 2. Enter the Service Name you want to delete.
 3. Click on Delete to delete the service.
