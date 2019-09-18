@@ -3,7 +3,7 @@ This is a windows app created to fecilitate the user to install or delete the Wi
 
 # Developer Info
 Cretaed By - Deepak Brijwasi
-Email - dbrijwasi@gmail.com
+Email - dbrijwasi4@gmail.com
 Mobile - +916398146244
 
 
