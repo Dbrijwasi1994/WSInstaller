@@ -17,11 +17,11 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="80"/>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="190"/>
             </Grid.ColumnDefinitions>
             <Image Source="/Images/amit.png" Grid.Column="0"/>
             <TextBlock Grid.Column="1" Text="Windows Service Installer" Background="#007ACC" Foreground="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center" Padding="0 5 0 0"  FontSize="18" FontWeight="Bold" Margin="0"/>
-            <Label Grid.Column="2" x:Name="labelDate" Background="#007ACC" Foreground="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" FontWeight="Bold" Content="{Binding Source={x:Static sys:DateTime.Today}, StringFormat='{}{0:dd-MMM-yyyy}'}"/>
+            <Label Grid.Column="2" x:Name="lblDate" Background="#007ACC" Foreground="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" FontWeight="Bold"/>
         </Grid>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>

@@ -7,6 +7,7 @@ using System.Management;
 using System.Diagnostics;
 using System.ServiceProcess;
 using System.Threading;
+using System.Windows.Threading;
 
 namespace WindowsService_Installer
 {
@@ -25,6 +26,7 @@ namespace WindowsService_Installer
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             radioInstall.IsChecked = true;
+            lblDate.Content = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             txtIns1.Text = " 1. Click on Install Service in Select Operation.";
             txtIns2.Text = " 2. Enter the Service Name you want to give.";
             txtIns3.Text = " 3. Enter the Display Name you want to give.";
@@ -33,6 +35,15 @@ namespace WindowsService_Installer
             txtIns7.Text = " 1. Click on Delete Service in Select Operation.";
             txtIns8.Text = " 2. Enter the Service Name you want to delete.";
             txtIns9.Text = " 3. Click on Delete to delete the service.";
+            DispatcherTimer timeUpdateTimer = new DispatcherTimer(DispatcherPriority.Background);
+            timeUpdateTimer.Interval = TimeSpan.FromSeconds(1);
+            timeUpdateTimer.Tick += TimeUpdateTimer_Tick;
+            timeUpdateTimer.Start();
+        }
+
+        private void TimeUpdateTimer_Tick(object sender, EventArgs e)
+        {
+            lblDate.Content = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
         }
 
         private void BtnBrowse_Click(object sender, RoutedEventArgs e)
