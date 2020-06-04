@@ -1,5 +1,5 @@
 # WindowsServiceInstaller
-This is a windows app created to fecilitate the user to install or delete the Windows services easily without having to remermber and run some commands. User just have to select the service exe and click on install.
+This is a windows app created to facilitate the user to install or delete the Windows services easily without having to remermber and run some commands. User just have to select the service exe and click on install.
 
 # Developer Info
 Cretaed By - Deepak Brijwasi
